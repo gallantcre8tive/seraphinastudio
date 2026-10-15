@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seraphina Studio | Luxury Photography & Flying Dress Photoshoots in Greece, Italy & France</title>
+  <meta name="description" content="Luxury photography and flying-dress photoshoots in Greece, Italy and France. Wedding, couple, engagement and destination photography with Seraphina Studio.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://seraphinastudio.eu/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Seraphina Studio | Luxury Photography & Flying Dress Photoshoots in Greece, Italy & France">
+  <meta property="og:description" content="Luxury photography and flying-dress photoshoots in Greece, Italy and France. Wedding, couple and destination experiences with Seraphina Studio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seraphinastudio.eu/">
+  <meta property="og:site_name" content="Seraphina Studio">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F3',
+            champagne: '#C6A46A',
+            charcoal: '#222222',
+            beige: '#EDE5DA',
+            softgold: '#D4B896'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.8s ease-out forwards',
+            'slide-up': 'slideUp 0.7s ease-out forwards',
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards'
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+            fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Seraphina Studio",
+    "url": "https://seraphinastudio.eu",
+    "email": "theseraphinastudio@gmail.com",
+    "description": "International photography and videography brand specialising in luxury flying-dress photoshoots, weddings, and destination experiences across Europe.",
+    "foundingDate": "2005",
+    "sameAs": [
+      "https://www.facebook.com/share/1CXhLpuB8H/?mibextid=wwXIfr",
+      "https://www.instagram.com/theseraphinastudio"
+    ]
+  }
+  </script>
+</head>
+<body class="font-sans bg-ivory text-charcoal antialiased">
+
+  <!-- Header -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 lg:h-24">
+        <!-- Logo -->
+        <a href="index.html" class="flex flex-col group">
+          <span class="font-serif text-xl sm:text-2xl tracking-wide text-white group-[.scrolled]:text-charcoal transition-colors duration-300">SERAPHINA</span>
+          <span class="text-[10px] sm:text-xs tracking-[0.25em] text-champagne uppercase mt-0.5">Studio</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm tracking-wide text-white/90 hover:text-champagne transition-colors duration-200">Home</a>
+          <a href="services.html" class="nav-link text-sm tracking-wide text-white/90 hover:text-champagne transition-colors duration-200">Services & Prices</a>
+          <a href="flying-dress.html" class="nav-link text-sm tracking-wide text-white/90 hover:text-champagne transition-colors duration-200">Flying-Dress Experience</a>
+          <a href="destinations.html" class="nav-link text-sm tracking-wide text-white/90 hover:text-champagne transition-colors duration-200">Destinations</a>
+          <a href="contact.html" class="nav-link text-sm tracking-wide text-white/90 hover:text-champagne transition-colors duration-200">Contact</a>
+        </nav>
+
+        <!-- CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20photography%20or%20videography%20experience." 
+             target="_blank" rel="noopener"
+             class="hidden sm:inline-flex items-center gap-2 bg-champagne hover:bg-[#b8945a] text-white text-xs tracking-wider uppercase px-4 py-2.5 rounded-sm transition-all duration-300 shadow-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book via WhatsApp
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal/95 backdrop-blur-md border-t border-white/10">
+      <nav class="flex flex-col px-6 py-6 gap-5">
+        <a href="index.html" class="text-white/90 hover:text-champagne text-sm tracking-wide">Home</a>
+        <a href="services.html" class="text-white/90 hover:text-champagne text-sm tracking-wide">Services & Prices</a>
+        <a href="flying-dress.html" class="text-white/90 hover:text-champagne text-sm tracking-wide">Flying-Dress Experience</a>
+        <a href="destinations.html" class="text-white/90 hover:text-champagne text-sm tracking-wide">Destinations</a>
+        <a href="contact.html" class="text-white/90 hover:text-champagne text-sm tracking-wide">Contact & Booking</a>
+        <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20photography%20or%20videography%20experience." 
+           target="_blank" rel="noopener"
+           class="mt-2 inline-flex items-center justify-center gap-2 bg-champagne text-white text-xs tracking-wider uppercase px-5 py-3 rounded-sm">
+          Book via WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/hero-flying-dress.jpg" 
+           alt="Elegant woman in flowing flying dress against Mediterranean coastal backdrop" 
+           class="w-full h-full object-cover object-center"
+           fetchpriority="high">
+      <div class="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/40 to-charcoal/70"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-24 pb-16">
+      <p class="text-champagne text-xs sm:text-sm tracking-[0.3em] uppercase mb-6 opacity-0 animate-fade-in" style="animation-delay: 0.2s">Your Moments. Our World.</p>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 opacity-0 animate-slide-up" style="animation-delay: 0.3s">
+        Luxury Photography &amp; Flying Dress<br>Photoshoots in Greece,<br>Italy &amp; France
+      </h1>
+      <p class="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up" style="animation-delay: 0.5s">
+        Discover unforgettable photography and cinematic experiences for weddings, couples, celebrations, fashion, and luxury travel across Greece, Italy, France and selected destinations in Europe.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up" style="animation-delay: 0.7s">
+        <a href="contact.html" class="inline-flex items-center justify-center bg-champagne hover:bg-[#b8945a] text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300 min-w-[200px]">
+          Book Your Experience
+        </a>
+        <a href="services.html" class="inline-flex items-center justify-center border border-white/60 hover:border-champagne hover:text-champagne text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300 min-w-[200px]">
+          Explore Services
+        </a>
+        <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20photography%20or%20videography%20experience." 
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-2 border border-champagne/80 text-champagne hover:bg-champagne hover:text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300 min-w-[200px]">
+          Book via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Services -->
+  <section class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Our Editorial Offerings</p>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal">Curated Visual Disciplines</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Card 1 -->
+        <article class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all duration-500">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="images/service-flying-dress.jpg" 
+                 alt="Woman in elegant green flying dress" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-charcoal mb-2">Flying-Dress Photoshoots</h3>
+            <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Iconic flowing gowns against European landscapes and historic settings.</p>
+            <p class="text-champagne text-sm font-medium mb-5">From €290</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="flying-dress.html" class="text-xs tracking-wider uppercase text-charcoal hover:text-champagne border-b border-charcoal/30 hover:border-champagne pb-0.5 transition-colors">View Packages</a>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20a%20Flying-Dress%20Photoshoot%20starting%20from%20%E2%82%AC290." target="_blank" rel="noopener" class="text-xs tracking-wider uppercase text-champagne hover:text-[#b8945a]">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all duration-500">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="images/service-couple.jpg" 
+                 alt="Couple in elegant attire during photoshoot" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-charcoal mb-2">Photography &amp; Videography</h3>
+            <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Timeless still imagery paired with high-definition cinematic storytelling.</p>
+            <p class="text-champagne text-sm font-medium mb-5">Packages vary by service</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="services.html" class="text-xs tracking-wider uppercase text-charcoal hover:text-champagne border-b border-charcoal/30 hover:border-champagne pb-0.5 transition-colors">View Packages</a>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20Photography%20%26%20Videography%20packages." target="_blank" rel="noopener" class="text-xs tracking-wider uppercase text-champagne hover:text-[#b8945a]">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all duration-500">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="images/service-wedding.jpg" 
+                 alt="Wedding couple in elegant setting" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-charcoal mb-2">Wedding Photography &amp; Films</h3>
+            <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Editorial luxury coverage for intimate elopements and grand celebrations.</p>
+            <p class="text-champagne text-sm font-medium mb-5">From €500</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="services.html#weddings" class="text-xs tracking-wider uppercase text-charcoal hover:text-champagne border-b border-charcoal/30 hover:border-champagne pb-0.5 transition-colors">View Packages</a>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20Wedding%20Photography%20starting%20from%20%E2%82%AC500." target="_blank" rel="noopener" class="text-xs tracking-wider uppercase text-champagne hover:text-[#b8945a]">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all duration-500">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="images/service-engagement.jpg" 
+                 alt="Romantic engagement proposal moment" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-charcoal mb-2">Engagements &amp; Proposals</h3>
+            <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Secret proposals and romantic engagement stories captured discreetly.</p>
+            <p class="text-champagne text-sm font-medium mb-5">From €250</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="services.html#engagement" class="text-xs tracking-wider uppercase text-charcoal hover:text-champagne border-b border-charcoal/30 hover:border-champagne pb-0.5 transition-colors">View Packages</a>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20an%20Engagement%20Photoshoot%20starting%20from%20%E2%82%AC250." target="_blank" rel="noopener" class="text-xs tracking-wider uppercase text-champagne hover:text-[#b8945a]">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all duration-500">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="images/service-birthday.jpg" 
+                 alt="Birthday celebration photography" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-charcoal mb-2">Birthday &amp; Celebration</h3>
+            <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Milestone birthdays, luxury parties, and vibrant celebrations.</p>
+            <p class="text-champagne text-sm font-medium mb-5">From €150</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="services.html#birthday" class="text-xs tracking-wider uppercase text-charcoal hover:text-champagne border-b border-charcoal/30 hover:border-champagne pb-0.5 transition-colors">View Packages</a>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20a%20Birthday%20Photoshoot%20starting%20from%20%E2%82%AC150." target="_blank" rel="noopener" class="text-xs tracking-wider uppercase text-champagne hover:text-[#b8945a]">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all duration-500">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="images/service-fashion.jpg" 
+                 alt="Fashion and personal branding portrait" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-charcoal mb-2">Fashion &amp; Personal Branding</h3>
+            <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Editorial portfolios, model lookbooks, and executive branding.</p>
+            <p class="text-champagne text-sm font-medium mb-5">From €200</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="services.html#fashion" class="text-xs tracking-wider uppercase text-charcoal hover:text-champagne border-b border-charcoal/30 hover:border-champagne pb-0.5 transition-colors">View Packages</a>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20Fashion%20%26%20Personal%20Branding%20starting%20from%20%E2%82%AC200." target="_blank" rel="noopener" class="text-xs tracking-wider uppercase text-champagne hover:text-[#b8945a]">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Flying-Dress -->
+  <section class="py-20 lg:py-28 bg-beige">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="relative">
+          <img src="images/flying-dress-main.jpg" 
+               alt="Woman in flowing yellow flying dress" 
+               class="w-full aspect-[4/5] object-cover rounded-sm shadow-lg"
+               loading="lazy">
+          <div class="absolute -bottom-6 -right-6 w-40 h-52 hidden sm:block">
+            <img src="images/flying-dress-detail.jpg" 
+                 alt="Detail of flowing fabric" 
+                 class="w-full h-full object-cover rounded-sm shadow-md border-4 border-ivory"
+                 loading="lazy">
+          </div>
+        </div>
+        <div>
+          <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Haute Couture Signature Experience</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mb-5 leading-snug">Your Moment. Your Dress.<br>Your Story.</h2>
+          <p class="text-charcoal/75 leading-relaxed mb-8">
+            Experience the beauty of flying-dress photography with elegant gowns, carefully selected locations, and professional images designed to preserve your memories.
+          </p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+              <div>
+                <p class="font-medium text-charcoal">Flying-Dress Photography</p>
+                <p class="text-xs text-charcoal/60">Elegant session with flowing gown</p>
+              </div>
+              <span class="text-champagne font-medium">From €290</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+              <div>
+                <p class="font-medium text-charcoal">Flying-Dress Video</p>
+                <p class="text-xs text-charcoal/60">Cinematic movement & atmosphere</p>
+              </div>
+              <span class="text-champagne font-medium">From €250</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+              <div>
+                <p class="font-medium text-charcoal">Flying-Dress Photo + Video</p>
+                <p class="text-xs text-charcoal/60">Combined photography & film</p>
+              </div>
+              <span class="text-champagne font-medium">From €350</span>
+            </div>
+          </div>
+          
+          <p class="text-xs text-charcoal/50 mb-6">*Availability and inclusions confirmed prior to booking acceptance.</p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="flying-dress.html" class="inline-flex items-center justify-center bg-charcoal hover:bg-charcoal/90 text-white text-sm tracking-wider uppercase px-7 py-3 rounded-sm transition-all duration-300">
+              View Packages
+            </a>
+            <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20a%20Flying-Dress%20experience." target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center border border-champagne text-champagne hover:bg-champagne hover:text-white text-sm tracking-wider uppercase px-7 py-3 rounded-sm transition-all duration-300">
+              Book on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Preview -->
+  <section class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4">
+        <div>
+          <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Iconic Backdrops</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-charcoal">European Destinations</h2>
+        </div>
+        <a href="destinations.html" class="text-sm tracking-wider uppercase text-champagne hover:text-[#b8945a] border-b border-champagne/40 hover:border-champagne pb-0.5 transition-colors self-start">
+          View All Destinations →
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <a href="destinations.html#paris" class="group relative aspect-[3/4] overflow-hidden rounded-sm">
+          <img src="images/dest-paris.jpg" alt="Paris, France" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <p class="text-white font-serif text-lg">Paris</p>
+            <p class="text-white/70 text-xs">France</p>
+          </div>
+        </a>
+        <a href="destinations.html#santorini" class="group relative aspect-[3/4] overflow-hidden rounded-sm">
+          <img src="images/dest-santorini.jpg" alt="Santorini, Greece" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <p class="text-white font-serif text-lg">Santorini</p>
+            <p class="text-white/70 text-xs">Greece</p>
+          </div>
+        </a>
+        <a href="destinations.html#rome" class="group relative aspect-[3/4] overflow-hidden rounded-sm">
+          <img src="images/dest-rome.jpg" alt="Rome, Italy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <p class="text-white font-serif text-lg">Rome</p>
+            <p class="text-white/70 text-xs">Italy</p>
+          </div>
+        </a>
+        <a href="destinations.html#amalfi" class="group relative aspect-[3/4] overflow-hidden rounded-sm">
+          <img src="images/dest-amalfi.jpg" alt="Amalfi Coast, Italy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <p class="text-white font-serif text-lg">Amalfi Coast</p>
+            <p class="text-white/70 text-xs">Italy</p>
+          </div>
+        </a>
+      </div>
+      
+      <p class="text-center text-sm text-charcoal/60 mt-8">Also available upon arrangement: Venice • Mykonos • Barcelona • Lisbon • Amsterdam • Prague • Zurich • Vienna</p>
+    </div>
+  </section>
+
+  <!-- Popular Packages -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Transparent European Pricing</p>
+        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mb-3">Popular Packages at a Glance</h2>
+        <p class="text-charcoal/60 text-sm max-w-xl mx-auto">Straightforward starting prices. Final pricing depends on destination, duration, and confirmed inclusions.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Solo &amp; Portrait</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Individual Photoshoot</h3>
+          <p class="text-champagne font-medium mb-3">From €120</p>
+          <a href="services.html" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Milestone</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Birthday Photoshoot</h3>
+          <p class="text-champagne font-medium mb-3">From €150</p>
+          <a href="services.html#birthday" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Romance</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Couple Photoshoot</h3>
+          <p class="text-champagne font-medium mb-3">From €180</p>
+          <a href="services.html" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Surprise</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Engagement Photoshoot</h3>
+          <p class="text-champagne font-medium mb-3">From €250</p>
+          <a href="services.html#engagement" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Haute Couture</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Flying-Dress Photoshoot</h3>
+          <p class="text-champagne font-medium mb-3">From €290</p>
+          <a href="flying-dress.html" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Cinema &amp; Stills</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Flying-Dress Photo + Video</h3>
+          <p class="text-champagne font-medium mb-3">From €350</p>
+          <a href="flying-dress.html" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Ceremony</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Wedding Photography</h3>
+          <p class="text-champagne font-medium mb-3">From €500</p>
+          <a href="services.html#weddings" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+        <div class="bg-ivory p-6 rounded-sm border border-beige hover:border-champagne/40 transition-colors duration-300">
+          <p class="text-xs tracking-wider uppercase text-champagne mb-2">Masterpiece</p>
+          <h3 class="font-serif text-lg text-charcoal mb-1">Wedding Photo + Video</h3>
+          <p class="text-champagne font-medium mb-3">From €900</p>
+          <a href="services.html#weddings" class="text-xs tracking-wider uppercase text-charcoal/70 hover:text-champagne">View details →</a>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="services.html" class="inline-flex items-center gap-2 bg-charcoal hover:bg-charcoal/90 text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300">
+          View All Services &amp; Prices
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="py-20 lg:py-28 bg-beige">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Our Artistic Philosophy</p>
+        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal">The Seraphina Difference</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="text-center px-4">
+          <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-champagne/40 rounded-full">
+            <svg class="w-5 h-5 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg text-charcoal mb-2">Photography &amp; Videography</h3>
+          <p class="text-sm text-charcoal/70 leading-relaxed">Dedicated services for stills, film, or combined packages tailored to your vision.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-champagne/40 rounded-full">
+            <svg class="w-5 h-5 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg text-charcoal mb-2">International Destinations</h3>
+          <p class="text-sm text-charcoal/70 leading-relaxed">Enquiries welcomed for selected European locations, subject to local arrangements.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-champagne/40 rounded-full">
+            <svg class="w-5 h-5 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg text-charcoal mb-2">Transparent Pricing</h3>
+          <p class="text-sm text-charcoal/70 leading-relaxed">Clear starting prices and package ranges published openly for every service category.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-champagne/40 rounded-full">
+            <svg class="w-5 h-5 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+          </div>
+          <h3 class="font-serif text-lg text-charcoal mb-2">Customisable Packages</h3>
+          <p class="text-sm text-charcoal/70 leading-relaxed">Photography-only, videography-only, or combined experiences shaped around your occasion.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-champagne/40 rounded-full">
+            <svg class="w-5 h-5 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg text-charcoal mb-2">Simple Booking Process</h3>
+          <p class="text-sm text-charcoal/70 leading-relaxed">Enquire via form or WhatsApp. Availability and final pricing confirmed before any booking is accepted.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center border border-champagne/40 rounded-full">
+            <svg class="w-5 h-5 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg text-charcoal mb-2">Personal Occasions &amp; Projects</h3>
+          <p class="text-sm text-charcoal/70 leading-relaxed">From intimate portraits to commercial productions — experiences for individuals, couples, families, and brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <img src="images/about-studio.jpg" 
+               alt="Elegant outdoor photography setting" 
+               class="w-full aspect-[4/5] object-cover rounded-sm shadow-md"
+               loading="lazy">
+        </div>
+        <div>
+          <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Heritage &amp; Vision</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mb-6">Our Story. Your Moments.</h2>
+          <p class="text-charcoal/80 leading-relaxed mb-5">
+            Founded in 2005, Seraphina Studio was built around the art of preserving meaningful moments through photography and film. Today, our vision reaches beyond a single studio, connecting memorable experiences with beautiful destinations, personal celebrations, fashion, and creative storytelling.
+          </p>
+          <p class="text-charcoal/80 leading-relaxed mb-5">
+            From intimate photoshoots to weddings and commercial productions, we help clients explore photography and videography experiences suited to their vision, destination, and occasion.
+          </p>
+          <p class="text-sm text-charcoal/60 mb-8">
+            Destination bookings depend on local professional availability, equipment, permissions, travel arrangements, and the requirements of each project.
+          </p>
+          <a href="contact.html" class="inline-flex items-center gap-2 text-sm tracking-wider uppercase text-champagne hover:text-[#b8945a] border-b border-champagne/40 hover:border-champagne pb-0.5 transition-colors">
+            Discover Our Story →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 lg:py-28 bg-charcoal text-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-4">Reservations &amp; Custom Itineraries</p>
+      <h2 class="font-serif text-3xl sm:text-4xl mb-5">Let's Create Something Beautiful.</h2>
+      <p class="text-white/75 leading-relaxed mb-10 max-w-xl mx-auto">
+        Tell us about your occasion, preferred destination, and the experience you have in mind. We'll help you explore suitable packages, confirm availability, and arrange the next steps.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20photography%20or%20videography%20experience." 
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-2 bg-champagne hover:bg-[#b8945a] text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300 min-w-[220px]">
+          Book via WhatsApp
+        </a>
+        <a href="contact.html" class="inline-flex items-center justify-center border border-white/40 hover:border-champagne hover:text-champagne text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300 min-w-[220px]">
+          Request a Personalised Quote
+        </a>
+      </div>
+      <p class="mt-8 text-sm text-white/50">
+        Or email us at <a href="mailto:theseraphinastudio@gmail.com" class="text-champagne hover:underline">theseraphinastudio@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white/80 pt-16 pb-8 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <p class="font-serif text-xl text-white tracking-wide mb-1">SERAPHINA</p>
+          <p class="text-[10px] tracking-[0.25em] text-champagne uppercase mb-4">Studio</p>
+          <p class="text-sm text-white/60 leading-relaxed mb-4">Your Moments. Our World.</p>
+          <p class="text-xs text-white/50 leading-relaxed">Founded in 2005. An internationally focused photography and videography brand serving customers across Europe and beyond.</p>
+        </div>
+        <div>
+          <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-4">Experience</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-champagne transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-champagne transition-colors">Services &amp; Prices</a></li>
+            <li><a href="flying-dress.html" class="hover:text-champagne transition-colors">Flying-Dress Experience</a></li>
+            <li><a href="destinations.html" class="hover:text-champagne transition-colors">Destinations</a></li>
+            <li><a href="contact.html" class="hover:text-champagne transition-colors">Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-4">Connect</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:theseraphinastudio@gmail.com" class="hover:text-champagne transition-colors">theseraphinastudio@gmail.com</a></li>
+            <li><a href="https://wa.me/447481317469" target="_blank" rel="noopener" class="hover:text-champagne transition-colors">WhatsApp Booking</a></li>
+            <li><a href="https://www.instagram.com/theseraphinastudio" target="_blank" rel="noopener" class="hover:text-champagne transition-colors">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1CXhLpuB8H/?mibextid=wwXIfr" target="_blank" rel="noopener" class="hover:text-champagne transition-colors">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-4">Legal</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html" class="hover:text-champagne transition-colors">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-champagne transition-colors">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
+        <p>© Seraphina Studio. All rights reserved.</p>
+        <p>seraphinastudio.eu</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile WhatsApp -->
+  <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20photography%20or%20videography%20experience." 
+     target="_blank" rel="noopener"
+     class="fixed bottom-5 right-5 z-40 lg:hidden w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
+     aria-label="Book via WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Photoshoot or Videographer | Seraphina Studio</title>
+  <meta name="description" content="Contact Seraphina Studio to enquire about photography, videography, flying-dress rentals, weddings, destination experiences and personalised packages.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://seraphinastudio.eu/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ivory: '#FAF8F3', champagne: '#C6A46A', charcoal: '#222222', beige: '#EDE5DA' },
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-ivory text-charcoal antialiased">
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-ivory/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex flex-col">
+          <span class="font-serif text-xl sm:text-2xl tracking-wide text-charcoal">SERAPHINA</span>
+          <span class="text-[10px] sm:text-xs tracking-[0.25em] text-champagne uppercase mt-0.5">Studio</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm tracking-wide text-charcoal/80 hover:text-champagne transition-colors">Home</a>
+          <a href="services.html" class="text-sm tracking-wide text-charcoal/80 hover:text-champagne transition-colors">Services & Prices</a>
+          <a href="flying-dress.html" class="text-sm tracking-wide text-charcoal/80 hover:text-champagne transition-colors">Flying-Dress Experience</a>
+          <a href="destinations.html" class="text-sm tracking-wide text-charcoal/80 hover:text-champagne transition-colors">Destinations</a>
+          <a href="contact.html" class="text-sm tracking-wide text-champagne font-medium">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking." target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-champagne hover:bg-[#b8945a] text-white text-xs tracking-wider uppercase px-4 py-2.5 rounded-sm transition-all duration-300">Book via WhatsApp</a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-charcoal" aria-label="Open menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal/95 backdrop-blur-md border-t border-white/10">
+      <nav class="flex flex-col px-6 py-6 gap-5">
+        <a href="index.html" class="text-white/90 hover:text-champagne text-sm">Home</a>
+        <a href="services.html" class="text-white/90 hover:text-champagne text-sm">Services & Prices</a>
+        <a href="flying-dress.html" class="text-white/90 hover:text-champagne text-sm">Flying-Dress Experience</a>
+        <a href="destinations.html" class="text-white/90 hover:text-champagne text-sm">Destinations</a>
+        <a href="contact.html" class="text-champagne text-sm">Contact & Booking</a>
+        <a href="https://wa.me/447481317469" target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 bg-champagne text-white text-xs tracking-wider uppercase px-5 py-3 rounded-sm">Book via WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 pb-20">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      <p class="text-champagne text-xs tracking-[0.25em] uppercase mb-3">Reservations</p>
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal mb-4">Let's Plan Your Experience.</h1>
+      <p class="text-charcoal/70 max-w-2xl leading-relaxed">Tell us what you have in mind, and Seraphina Studio will help you explore suitable photography, videography, and flying-dress experiences.</p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-5 gap-12">
+        <!-- Form -->
+        <div class="lg:col-span-3">
+          <form id="booking-form" class="bg-white p-6 sm:p-8 rounded-sm shadow-sm border border-beige space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="fullName" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all" placeholder="Your full name">
+              </div>
+              <div>
+                <label for="email" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Email Address *</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="whatsapp" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">WhatsApp Number *</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all" placeholder="+44 7xxx xxxxxx">
+              </div>
+              <div>
+                <label for="destination" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Preferred Destination *</label>
+                <select id="destination" name="destination" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all">
+                  <option value="">Select destination</option>
+                  <option value="Paris, France">Paris, France</option>
+                  <option value="Rome, Italy">Rome, Italy</option>
+                  <option value="Santorini, Greece">Santorini, Greece</option>
+                  <option value="Venice, Italy">Venice, Italy</option>
+                  <option value="Amalfi Coast, Italy">Amalfi Coast, Italy</option>
+                  <option value="Mykonos, Greece">Mykonos, Greece</option>
+                  <option value="Barcelona, Spain">Barcelona, Spain</option>
+                  <option value="Lisbon, Portugal">Lisbon, Portugal</option>
+                  <option value="Amsterdam, Netherlands">Amsterdam, Netherlands</option>
+                  <option value="Prague, Czechia">Prague, Czechia</option>
+                  <option value="Zurich, Switzerland">Zurich, Switzerland</option>
+                  <option value="Vienna, Austria">Vienna, Austria</option>
+                  <option value="Other / To be discussed">Other / To be discussed</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="serviceCategory" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Service Category *</label>
+                <select id="serviceCategory" name="serviceCategory" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all">
+                  <option value="">Select service</option>
+                  <option value="Flying-Dress Photoshoot">Flying-Dress Photoshoot</option>
+                  <option value="Flying-Dress Videography">Flying-Dress Videography</option>
+                  <option value="Flying-Dress Photo + Video">Flying-Dress Photo + Video</option>
+                  <option value="Wedding Photography">Wedding Photography</option>
+                  <option value="Wedding Videography">Wedding Videography</option>
+                  <option value="Wedding Photo + Video">Wedding Photo + Video</option>
+                  <option value="Engagement or Proposal">Engagement or Proposal</option>
+                  <option value="Birthday or Celebration">Birthday or Celebration</option>
+                  <option value="Family or Couple Photoshoot">Family or Couple Photoshoot</option>
+                  <option value="Fashion or Modelling">Fashion or Modelling</option>
+                  <option value="Corporate Photography or Videography">Corporate Photography or Videography</option>
+                  <option value="Destination Experience">Destination Experience</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p id="service-price-note" class="text-xs text-champagne mt-1.5 hidden"></p>
+              </div>
+              <div>
+                <label for="serviceType" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Photography, Videography, or Both *</label>
+                <select id="serviceType" name="serviceType" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all">
+                  <option value="">Select type</option>
+                  <option value="Photography only">Photography only</option>
+                  <option value="Videography only">Videography only</option>
+                  <option value="Both Photography & Videography">Both Photography & Videography</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="preferredDate" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Preferred Date *</label>
+                <input type="date" id="preferredDate" name="preferredDate" required class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all">
+              </div>
+              <div>
+                <label for="numberOfPeople" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Number of People</label>
+                <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all" placeholder="1">
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="dressColour" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Preferred Flying-Dress Colour</label>
+                <select id="dressColour" name="dressColour" class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all">
+                  <option value="">Not applicable / No preference</option>
+                  <option value="Red">Red</option>
+                  <option value="Royal Blue">Royal Blue</option>
+                  <option value="White">White</option>
+                  <option value="Black">Black</option>
+                  <option value="Pink">Pink</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Emerald Green">Emerald Green</option>
+                  <option value="Purple">Purple</option>
+                  <option value="Champagne">Champagne</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="preferredPackage" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Preferred Package</label>
+                <input type="text" id="preferredPackage" name="preferredPackage" class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all" placeholder="e.g. Classic, Premium">
+              </div>
+            </div>
+            <div>
+              <label for="additionalRequirements" class="block text-xs tracking-wider uppercase text-charcoal/70 mb-1.5">Additional Requirements</label>
+              <textarea id="additionalRequirements" name="additionalRequirements" rows="4" class="w-full px-4 py-3 bg-ivory border border-beige rounded-sm text-sm focus:border-champagne focus:ring-1 focus:ring-champagne/30 outline-none transition-all resize-y" placeholder="Tell us more about your vision, occasion, or any special requests..."></textarea>
+            </div>
+            
+            <div id="form-message" class="hidden"></div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+              <button type="submit" class="inline-flex items-center justify-center bg-charcoal hover:bg-charcoal/90 text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300">
+                Request a Personalised Quote
+              </button>
+              <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking." target="_blank" rel="noopener" class="inline-flex items-center justify-center border border-champagne text-champagne hover:bg-champagne hover:text-white text-sm tracking-wider uppercase px-8 py-3.5 rounded-sm transition-all duration-300">
+                Book via WhatsApp
+              </a>
+            </div>
+            <p class="text-xs text-charcoal/50">* Required fields. Submitting this form does not confirm a booking. We will review your enquiry and confirm availability and pricing before any booking is accepted.</p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-2 space-y-8">
+          <div class="bg-beige/50 p-6 rounded-sm">
+            <h2 class="font-serif text-lg text-charcoal mb-4">Prefer Instant Conversation?</h2>
+            <p class="text-sm text-charcoal/70 mb-5 leading-relaxed">Message us on WhatsApp for immediate verification, dress colour charts, and itinerary consultations.</p>
+            <a href="https://wa.me/447481317469?text=Hello%20Seraphina%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20booking." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm tracking-wider uppercase px-6 py-3 rounded-sm transition-all duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Book via WhatsApp
+            </a>
+          </div>
+          
+          <div>
+            <h2 class="font-serif text-lg text-charcoal mb-3">Email</h2>
+            <a href="mailto:theseraphinastudio@gmail.com" class="text-champagne hover:underline">theseraphinastudio@gmail.com</a>
+          </div>
+          
+          <div>
+            <h2 class="font-serif text-lg text-charcoal mb-3">How We Handle Enquiries</h2>
+            <ol class="text-sm text-charcoal/70 space-y-2 list-decimal list-inside leading-relaxed">
+              <li>You submit an enquiry via form or WhatsApp.</li>
+              <li>We review your requested service, destination, and date.</li>
+              <li>We check local availability of professionals, equipment, and (if needed) dress rental.</li>
+              <li>We confirm final package details and pricing with you.</li>
+              <li>Booking is confirmed only after arrangements and terms are agreed.</li>
+            </ol>
+          </div>
+          
+          <div class="text-xs text-charcoal/50 leading-relaxed">
+            We do not automatically confirm bookings or invent availability. For large projects, weddings, and commercial productions, a personalised quote will be provided.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-white/80 pt-16 pb-8 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <p class="font-serif text-xl text-white tracking-wide mb-1">SERAPHINA</p>
+          <p class="text-[10px] tracking-[0.25em] text-champagne uppercase mb-4">Studio</p>
+          <p class="text-sm text-white/60 leading-relaxed mb-4">Your Moments. Our World.</p>
+          <p class="text-xs text-white/50 leading-relaxed">Founded in 2005. An internationally focused photography and videography brand serving customers across Europe and beyond.</p>
+        </div>
+        <div>
+          <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-4">Experience</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-champagne transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-champagne transition-colors">Services &amp; Prices</a></li>
+            <li><a href="flying-dress.html" class="hover:text-champagne transition-colors">Flying-Dress Experience</a></li>
+            <li><a href="destinations.html" class="hover:text-champagne transition-colors">Destinations</a></li>
+            <li><a href="contact.html" class="hover:text-champagne transition-colors">Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-4">Connect</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:theseraphinastudio@gmail.com" class="hover:text-champagne transition-colors">theseraphinastudio@gmail.com</a></li>
+            <li><a href="https://wa.me/447481317469" target="_blank" rel="noopener" class="hover:text-champagne transition-colors">WhatsApp Booking</a></li>
+            <li><a href="https://www.instagram.com/theseraphinastudio" target="_blank" rel="noopener" class="hover:text-champagne transition-colors">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1CXhLpuB8H/?mibextid=wwXIfr" target="_blank" rel="noopener" class="hover:text-champagne transition-colors">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-4">Legal</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html" class="hover:text-champagne transition-colors">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-champagne transition-colors">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
+        <p>© Seraphina Studio. All rights reserved.</p>
+        <p>seraphinastudio.eu</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/447481317469" target="_blank" rel="noopener" class="fixed bottom-5 right-5 z-40 lg:hidden w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform wa-sticky" aria-label="Book via WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html>
